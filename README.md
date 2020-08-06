@@ -16,6 +16,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Step - 2
 >npm i ngconf-search --save  
 [NPM Package Link](https://www.npmjs.com/package/ngconf-search "ngconf-search")  
+Even **ngconf-search** package is maintained by us so that it unlikely to have versioning issues. 
 
 import NgconfTypeaheadModule in **app.module.ts** file.  
 **app.module.ts**
