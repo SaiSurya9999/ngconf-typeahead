@@ -80,7 +80,8 @@ modify the code.
 3 **[term]** this input property is for binding user input to the filter.  
 4 **[stop]** this input property is for force stop typeahead functionality.  
 
-## Styling of Typeahead Suggestions (Styles can be overwritten baseed on your application theme.)
+## Styling of Typeahead Suggestions (Styles can be overwritten based on your application theme)  
+> Styles can be overwritten in global styles file in angular project.  
 1. **typeahead** class is for parent div styling.  
 2. **typeaheadul** class is for ul tag which is parent for li tag.
 3. **typeaheadli** class is for li elements of suggestions.  
