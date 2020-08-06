@@ -26,7 +26,7 @@ import {NgconfTypeaheadModule} from 'ngconf-typeahead';
   ]
   ```
 
-## Step - 2
+## Step - 3
 This step is to quick start the usage of package later with the understanding of workflow you can  
 modify the code.  
 **app.component.ts**
