@@ -71,8 +71,8 @@ modify the code.
 ```
 
 ## Explanation on Component Properties  
-> (onSelect) event is triggered when user interact with the typeahead list showed.  
-> [typeaheads] this input property is to take the data for typeahead preview filter.  
-> [term] this input property is for binding user input to the filter.  
-> [stop] this input property is for force stop typeahead functionality.  
+1 (onSelect) event is triggered when user interact with the typeahead list showed.  
+2 [typeaheads] this input property is to take the data for typeahead preview filter.  
+3 [term] this input property is for binding user input to the filter.  
+4 [stop] this input property is for force stop typeahead functionality.  
 > That's it you are good to go. Happy Coding :)
