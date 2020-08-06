@@ -23,12 +23,11 @@ import {NgconfTypeaheadModule} from 'ngconf-typeahead';
   ```
 
 ## Step - 2
-Declare two global variables **term,prop** in **app.component.ts** file.  
-term is to for binding search term of user.  
-prop is for search based on specific property of array.
+This step is to quick start the usage of package later with the understanding of workflow you can  
+modify the code.  
 **app.component.ts**
  ```javascript
-    term:any = "";
+  term:any = "";
   stop:boolean = false;
   states:any = [
     'Adilabad',
@@ -72,8 +71,8 @@ prop is for search based on specific property of array.
 ```
 
 ## Explanation on Component Properties  
-> (onSelect) event is triggered when user interact with the typeahead list showed.
-> [typeaheads] this input property is to take the data for typeahead preview filter.
-> [term] this input property is for binding user input to the filter.
-> [stop] this input property is for force stop typeahead functionality.
+> (onSelect) event is triggered when user interact with the typeahead list showed.  
+> [typeaheads] this input property is to take the data for typeahead preview filter.  
+> [term] this input property is for binding user input to the filter.  
+> [stop] this input property is for force stop typeahead functionality.  
 > That's it you are good to go. Happy Coding :)
