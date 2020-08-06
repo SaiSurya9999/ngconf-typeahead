@@ -10,8 +10,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Step - 1
 
-> npm i ngconf-typeahead --save 
+> npm i ngconf-typeahead --save  
 [NPM Package Link](https://www.npmjs.com/package/ngconf-typeahead "ngconf-typeahead")  
+
+## Step - 2
+>npm i ngconf-search --save  
+[NPM Package Link](https://www.npmjs.com/package/ngconf-search "ngconf-search")  
 
 import NgconfTypeaheadModule in **app.module.ts** file.  
 **app.module.ts**
