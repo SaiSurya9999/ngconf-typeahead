@@ -79,4 +79,22 @@ modify the code.
 2 **[typeaheads]** this input property is to take the data for typeahead preview filter.  
 3 **[term]** this input property is for binding user input to the filter.  
 4 **[stop]** this input property is for force stop typeahead functionality.  
+
+## Styling of Typeahead Suggestions (Styles can be overwritten baseed on your application theme.)
+1. **typeahead** class is for parent div styling.  
+2. **typeaheadul** class is for ul tag which is parent for li tag.
+3. **typeaheadli** class is for li elements of suggestions.  
+
+```css
+.typeaheadul{
+  background: #cce5ff;
+}
+.typeaheadli{
+  color: purple;
+}
+.typeahead{
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+      padding: 10px;
+}
+```
 > That's it you are good to go. Happy Coding :)
