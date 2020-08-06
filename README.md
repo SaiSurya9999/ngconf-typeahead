@@ -1,27 +1,79 @@
-# Typeaheadlib
+# Ngconf-Typeahead Library
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
 
-## Development server
+> ![ngconf-typeahead](https://img.icons8.com/cute-clipart/48/000000/hint.png "Typeahead Feature") Typeahead Feature for Angular.  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Demo Link   
+[Stackblitz Demo](https://stackblitz.com/edit/ngconf-typeahead "ngconf-typeahead Demo") 
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Step - 1
 
-## Build
+> npm i ngconf-search --save  
+[NPM Package Link](https://www.npmjs.com/package/ngconf-typeahead "ngconf-typeahead")  
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+import NgconfTypeaheadModule in **app.module.ts** file.  
+**app.module.ts**
+```javascript
+import {NgconfTypeaheadModule} from 'ngconf-typeahead';
+ imports: [
+    NgconfTypeaheadModule
+  ]
+  ```
 
-## Running unit tests
+## Step - 2
+Declare two global variables **term,prop** in **app.component.ts** file.  
+term is to for binding search term of user.  
+prop is for search based on specific property of array.
+**app.component.ts**
+ ```javascript
+    term:any = "";
+  stop:boolean = false;
+  states:any = [
+    'Adilabad',
+    'Anantapur',
+    'Chittoor',
+    'Kakinada',
+    'Guntur',
+    'Hyderabad',
+    'Karimnagar',
+    'Khammam',
+    'Krishna',
+    'Kurnool',
+    'Mahbubnagar',
+    'Medak',
+    'Nalgonda',
+    'Nizamabad',
+    'Ongole',
+    'Hyderabad',
+    'Srikakulam',
+    'Nellore',
+    'Visakhapatnam',
+    'Vizianagaram',
+    'Warangal',
+    'Eluru',
+    'Kadapa'
+  ]
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  onSelect(item){
+    this.term = item;
+  }
+```
+**app.component.html**
+```html
+<input type="text" [(ngModel)]="term" placeholder="States">
+<ngconf-typeahead
+(onSelect)="onSelect($event)" 
+[typeaheads] = "states" 
+[term]="term"
+[stop]="stop"
+></ngconf-typeahead>
+```
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Explanation on Component Properties  
+> (onSelect) event is triggered when user interact with the typeahead list showed.
+> [typeaheads] this input property is to take the data for typeahead preview filter.
+> [term] this input property is for binding user input to the filter.
+> [stop] this input property is for force stop typeahead functionality.
+> That's it you are good to go. Happy Coding :)
