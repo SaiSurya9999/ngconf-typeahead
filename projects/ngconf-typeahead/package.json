@@ -19,6 +19,7 @@
     "email": "tsaisurya@gmail.com"
   },
   "homepage": "https://github.com/SaiSurya9999/ngconf-typeahead",
+  "license": "MIT",
   "keywords": [
     "angular",
     "javascript",
